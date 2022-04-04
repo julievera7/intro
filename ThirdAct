@@ -1,0 +1,54 @@
+/**
+ *
+ * @author aliet
+ */
+
+/*Para practicar la encapsulación:
+Crear clase Persona.
+Crear variables las privadas edad, nombre y telefono de la clase Persona.
+Crear gets y sets de cada propiedad.
+Crear un objeto persona en el main.
+Utiliza los gets y sets para darle valores a las propiedades edad, nombre y telefono, por último muéstralas por consola.
+*/
+public class ThirdAct {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        
+        Persona persona = new Persona();  
+        persona.setedad(20);
+        persona.settelefono(5555555);
+        persona.setnombre("Juan");
+        System.out.println("La edad de " + persona.getnombre() + " es " + persona.getedad() + " su numero de telefono es " + persona.gettelefono());
+    }
+}
+
+class Persona {
+    private int edad;
+    private int telefono;
+    private String nombre;
+    
+    public void setedad(int edad){
+        this.edad=edad;
+    }
+    
+    public void settelefono(int telefono){
+        this.telefono=telefono;
+    }
+    
+    public void setnombre(String nombre){
+        this.nombre=nombre;
+    }
+    
+    public int getedad(){
+        return this.edad;
+    }
+    public int gettelefono(){
+        return this.telefono;
+    }
+    public String getnombre(){
+        return this.nombre;
+    }
+}
